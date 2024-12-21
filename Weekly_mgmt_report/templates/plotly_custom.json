@@ -1,0 +1,44 @@
+{
+  "layout": {
+    "font": {
+      "family": "Open Sans, sans-serif",
+      "size": 12,
+      "color": "#2c3e50"
+    },
+    "title": {
+      "font": {
+        "size": 22,
+        "color": "#e67e22"
+      }
+    },
+    "colorway": ["#AEC7E8","#FFBB78","#98DF8A","#FF9896","#C5B0D5","#FF7F0E","#2CA02C","#D62728","#9467BD","#8C564B"],
+    "paper_bgcolor": "#f0f4f8",
+    "plot_bgcolor": "#ffffff",
+    "hovermode": "closest",
+    "hoverlabel": {
+      "bgcolor": "#34495e",
+      "font": {
+        "color": "#ffffff"
+      }
+    },
+    "legend": {
+      "font": {
+        "size": 12,
+        "color": "#2c3e50"
+      },
+      "bgcolor": "#f0f4f8"
+    },
+    "xaxis": {
+      "showgrid": true,
+      "gridcolor": "#dcdcdc",
+      "zeroline": false,
+      "linecolor": "#2c3e50"
+    },
+    "yaxis": {
+      "showgrid": true,
+      "gridcolor": "#dcdcdc",
+      "zeroline": false,
+      "linecolor": "#2c3e50"
+    }
+  }
+}

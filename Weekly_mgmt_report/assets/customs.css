@@ -1,0 +1,199 @@
+/* custom.css */
+
+/* ----------------------------
+   General Styles
+---------------------------- */
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f9fafb;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* ----------------------------
+   Sidebar Styles
+---------------------------- */
+#sidebar {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+}
+
+#sidebar-title {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5rem;
+    color: #ecf0f1;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-weight: 600;
+    border-bottom: 1px solid #34495e;
+    padding-bottom: 0.5rem;
+}
+
+#sidebar .nav-link {
+    font-size: 1.1rem;
+    padding: 0.75rem 1.25rem;
+    border-radius: 0.25rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#sidebar .nav-link:hover {
+    background-color: #20bda4;
+    color: #ffffff;
+}
+
+#sidebar .nav-link.active {
+    background-color: #1abc9c;
+    color: #ffffff;
+}
+
+#btn_sidebar {
+    border-radius: 50%;
+    padding: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.3s, background-color 0.3s;
+    background-color: #1abc9c;
+    border: none;
+}
+
+#btn_sidebar:hover {
+    transform: rotate(90deg);
+    background-color: #17a589;
+}
+
+#btn_sidebar .fas {
+    font-size: 1.2rem;
+    color: #ffffff;
+}
+
+/* ----------------------------
+   Page Content Styles
+---------------------------- */
+#page-content {
+    overflow: auto;
+    padding: 2rem;
+}
+
+/* ----------------------------
+   KPI Cards Styles
+---------------------------- */
+.kpi-card {
+    background: #1abc9c;
+    color: #ffffff;
+    border: none;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin-bottom: 1.5rem;
+}
+
+.kpi-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+
+.kpi-card .card-body div i {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+}
+
+.kpi-card .card-body div h6 {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+}
+
+.kpi-card .card-body div h4 {
+    font-weight: 700;
+    font-size: 1.8rem;
+    color: #ffffff;
+}
+
+/* ----------------------------
+   Graph Styles
+---------------------------- */
+.js-plotly-plot .plotly .main-svg .title-text {
+    font-size: 20px !important;
+    font-weight: bold !important;
+    fill: #e67e22;
+}
+
+/* ----------------------------
+   Data Table Styles
+---------------------------- */
+table.dataTable thead th {
+    background-color: #ecf0f1;
+    color: #2c3e50;
+    font-weight: bold;
+    text-align: center;
+}
+
+table.dataTable tbody td {
+    text-align: center;
+    vertical-align: middle;
+    padding: 0.75rem;
+}
+
+table.dataTable tbody tr:hover {
+    background-color: #eaeaea;
+}
+
+table.dataTable tbody td[data-column="Comment"] {
+    text-align: left;
+    max-width: 300px;
+    word-wrap: break-word;
+}
+
+.card + .card {
+    border-top: 1px solid #eaeaea;
+}
+
+.card-body {
+    padding: 1.5rem;
+}
+
+.btn {
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.btn:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.modal-header {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+}
+
+.modal-footer .btn {
+    background-color: #1abc9c;
+    color: #ffffff;
+    border: none;
+    border-radius: 0.25rem;
+    transition: background-color 0.3s;
+}
+
+.modal-footer .btn:hover {
+    background-color: #17a589;
+}
+
+@media (max-width: 768px) {
+    #sidebar {
+        width: 0;
+        padding: 0;
+    }
+
+    #page-content {
+        margin-left: 0;
+    }
+
+    #btn_sidebar {
+        left: 1rem;
+    }
+}
+
+.collapse {
+    transition: height 0.35s ease;
+}
